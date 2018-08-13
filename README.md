@@ -1,9 +1,12 @@
 Juego de la vida / The Game of Life
 ===
-###¿Que es el juego de la vida?
+¿Que es el juego de la vida?
+----------------------------
+
 Es un "autómata celular" propuesto por el matemático John H. Conway en 1970. Consiste en una matriz, donde cada celda puede tomar uno de dos valores: "viva" o "muerta", dependiendo de unas ciertas reglas.
 
-###Reglas
+Reglas
+------
 
 1. Se cuentan cuántas células vivas hay en los ocho vecinos cercanos (cero si no hay vecinos, ocho si toda la vecindad está ocupada).
 
