@@ -1,15 +1,6 @@
 var Celulas = function(matrixSize) {
     var matriz = [];
     var matrizPivote = [];
-    crearMatriz();
-
-
-    this.getMatrizPivote = function(){
-        return matrizPivote;
-    };
-    this.getMatriz = function(){
-        return matriz;
-    };
 
     crearMatriz = function() {
         for(var x = 0; x<matrixSize; x++){
@@ -18,6 +9,17 @@ var Celulas = function(matrixSize) {
                 matriz[x][y] = Math.round(Math.random());
         }
     };
+    
+    crearMatriz();
+
+    this.getMatrizPivote = function(){
+        return matrizPivote;
+    };
+    this.getMatriz = function(){
+        return matriz;
+    };
+
+
 
     this.print = function(matrix){
         $('#matriz').html('');
