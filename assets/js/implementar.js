@@ -16,7 +16,7 @@ $(document).ready(function(){
 
             //Repetimos el proceso
             myLoop();
-        }, 50)
+        }, 500)
     }
 
     //Iniciamos el loop infinito

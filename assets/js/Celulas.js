@@ -19,8 +19,6 @@ var Celulas = function(matrixSize) {
         return matriz;
     };
 
-
-
     this.print = function(matrix){
         $('#matriz').html('');
 
@@ -30,6 +28,15 @@ var Celulas = function(matrixSize) {
                 tr.append($('<td class="celula'+matrix[y][x]+'"> </td>'))
             }
             $('#matriz').append(tr);
+        }
+    };
+
+    this.printBinario = function (matrix) {
+        for(var y = 0; y<matrixSize; y++){
+            for(var x = 0; x<matrixSize; x++){
+                document.write(matrix[y][x]+' ');
+            }
+            document.write('<br>');
         }
     };
 
@@ -57,7 +64,6 @@ var Celulas = function(matrixSize) {
 
 
     var vivaOmuerta = function (estado, cantidadVecinos){
-
         if(estado === 1){
             if( cantidadVecinos === 2 || cantidadVecinos === 3)
                 return 1;
@@ -67,5 +73,4 @@ var Celulas = function(matrixSize) {
         }
         return 0;
     }
-
 };

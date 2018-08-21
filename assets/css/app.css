@@ -4,3 +4,6 @@ td.celula1{
 body{
     background-color: #03030f;
 }
+div.container{
+    padding: 1em;
+}
